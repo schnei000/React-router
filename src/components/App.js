@@ -11,6 +11,9 @@ function App() {
     <div>
       <NavBar />
       <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/movies">
           <Movies />
         </Route>
@@ -19,9 +22,6 @@ function App() {
         </Route>
         <Route path="/actors">
           <Actors />
-        </Route>
-        <Route path="/">
-          <Home />
         </Route>
       </Switch>
     </div>
