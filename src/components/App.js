@@ -5,6 +5,7 @@ import Home from "./Home";
 import Actors from "./Actors";
 import Directors from "./Directors";
 import Movies from "./Movies";
+import ErrorPage from "../../ErrorPage";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
         </Route>
         <Route path="/actors">
           <Actors />
+        </Route>
+        {/* Route de secours pour les chemins non correspondants (page 404) */}
+        <Route>
+          <ErrorPage />
         </Route>
       </Switch>
     </div>
